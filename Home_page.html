@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="icon" href="./icon.png">
+    <link rel="Stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav">
+            <img src="./Netflix.png">
+            <div class="nav_a">
+            <a><strong>TV Shows</strong></a>
+            <a><strong>Movies</strong></a>
+            <a><strong>Recently Added</strong></a>
+            <a><strong>List</strong></a>
+            </div>
+            
+        </div>
+            
+            <!-- <button type="reset"></button> -->
+        <div class="searchbar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" onclick="Searchbox" color = "white" class="search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+        </div>
+    </header>
+    <div class="SlideShow" id="Slide">
+        <div class="mySlides fade">
+            <img src="./Stranger_Things.jpg">
+            <div class="ST_Info">
+                <strong>STRANGER THINGS</strong>
+                <p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and a strange little girl.</p>
+                <button id="play">
+                    <i class="bi bi-play-fill"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                      </svg>
+                      Play</button>
+                <button id="List">
+                    <i class="bi bi-plus-lg"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                      </svg>
+                      My List</button>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <img src="./Wednesday.jpg">
+            <div class="ST_Info">
+                <strong>Wednesday</strong>
+                <p id="Para">While attending Nevermore Academy, Wednesday Addams attempts to master her emerging psychic ability, thwart a killing spree and solve the mystery that embroiled her parents 25 years ago.</p>
+                <button id="play">
+                    <i class="bi bi-play-fill"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                      </svg>
+                      Play</button>
+                <button id="List">
+                    <i class="bi bi-plus-lg"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                      </svg>
+                      My List</button>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <img src="./13_reasons.jpg">
+            <div class="ST_Info">
+                <strong>13 Reasons Why</strong>
+                <p>Why did Hannah Baker take her own life? The hearbreaking truth is all on tape.... and it's about to come out.</p>
+                <button id="play">
+                    <i class="bi bi-play-fill"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                      </svg>
+                      Play</button>
+                <button id="List">
+                    <i class="bi bi-plus-lg"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                      </svg>
+                      My List</button>
+            </div>
+        </div>
+    </div>
+    <div class="popular">
+        <div class="popular_shows">
+            <p>Popular on Netflix<p>
+                    <section class="P_Image">
+                        <section class="show">
+                            <img src="/show10.jpeg" height="270px" width="170px">
+                            <!-- <p>Idli</p> -->
+                        </section>
+                        <section class="show">
+                            <img src="/show11.jpg">
+                            <!-- <p>Idli</p> -->
+                        </section>
+                        <section class="show">
+                            <img src="/show9.jpeg">
+                            <!-- <p>Idli</p> -->
+                        </section>
+                        <section class="show">
+                            <img src="/show1.jpeg">
+                            <!-- <p>Idli</p> -->
+                        </section>
+                        <section class="show">
+                            <img src="/show7.jpeg">
+                        </section>
+                        <section class="show">
+                            <img src="/show2.jpeg">
+                        </section>
+                        <section class="show">
+                            <img src="/show3.jpeg">
+                        </section>
+                        <section class="show">
+                            <img src="/show4.jpeg">
+                        </section>
+                        <section class="show">
+                            <img src="/show5.jpeg">
+                        </section>
+                        <section class="show">
+                            <img src="/show6.jpeg">
+                        </section>
+                        
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Original">
+        <div class="Original_shows">
+            <p>Netflix Original<p>
+                    <section class="P_Image">
+                        <section class="show">
+                            <img src="/show1.jpeg">
+                            <!-- <p>Idli</p> -->
+                        </section>
+                        <section class="show">
+                            <img src="/show7.jpeg">
+                        </section>
+                        <section class="show">
+                            <img src="/show2.jpeg">
+                        </section>
+                        <section class="show">
+                            <img src="/show3.jpeg">
+                        </section>
+                        <section class="show">
+                            <img src="/show4.jpeg">
+                        </section>
+                        <section class="show">
+                            <img src="/show5.jpeg">
+                        </section>
+                        <section class="show">
+                            <img src="/show6.jpeg">
+                        </section>
+                        <section class="show">
+                            <img src="/show8.jpeg">
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+    <div class="footer">
+        <div class="number">Questions? Call <a>000-800-919-1694</a></div>
+        <div class="help">
+            <table>
+            <th>
+                <tr>
+                <td><a>Help Centre</a></td>
+                <td><a id="row">Account</a></td>
+                <td><a id="row">Media Centre</a></td>
+                </tr>
+            </th>
+            <th>
+                <tr>
+                    <td><a>FAQ</a></td>
+                    <td><a id="row">Investor Relations</a></td>
+                    <td><a id="row">Jobs</a></td>
+                </tr>
+            </th>
+            <th>
+                <tr>
+                <td><a>Ways to Watch</a></td>
+                <td><a id="row">Terms of Use</a></td>
+                <td><a id="row">Privacy</a>
+                </tr>
+            </th>
+            <th>
+                <tr>
+                    <td><a>Cookie Preferences</a></td>
+                    <td><a id="row">Corporate Information</a></td>
+                    <td><a id="row">Contact Us</a></td>
+                </tr>
+            </th>
+            <th>
+                <tr>
+                    <td><a>Speed Test</a></td>
+                    <td><a id="row">Legal Notices</a></td>
+                    <td><a id="row">Only on Netflix</a></td>
+                </tr>
+            </th>
+        </table>
+            </div>
+                <div class="dropdown">
+                    <select>
+                        <option class="R1">English</option>
+                        <option class="R2">Hindi</option>
+                        <option class="R3">French</option>
+                        <option class="R4">Spanish</option>
+                    </select>
+                </div>
+                <div class="a">Netflix India</div>
+    </div>
+</div>
+
+    <script src="./Home_page.js"></script>
+</body>
+</html>
